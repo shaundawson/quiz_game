@@ -3,6 +3,14 @@ class QuizBrain:
         self.question_number = 0  # keeps track of which question the user is currently on
         self.question_list = q_list
 
+    # TODO Return a boolean value depending on the value of question_number.
+    def still_has_questions(self):
+        # return self.question_number < len(self.question_list)
+        if self.question_number < len(self.question_list):
+            return True
+        else:
+            return False
+
     def next_question(self):
         # Retrieve the item at the current question_number from the question_list
         current_question = self.question_list[self.question_number]
