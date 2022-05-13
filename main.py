@@ -2,6 +2,7 @@
 
 from question_model import Question
 from data import question_data
+from quiz_brain import QuizBrain
 
 # TODO Create question_bank, a list of question objects
 question_bank = []
@@ -16,5 +17,5 @@ for question in question_data:
     # TODO Append each Question object to the question_bank
     question_bank.append(new_question)
 
-print(question_bank[0].text)
-print(question_bank[0].answer)
+quiz = QuizBrain(question_bank)
+quiz.next_question()
