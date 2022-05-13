@@ -1,22 +1,14 @@
-# TODO How to create your own class in python
+
 class User:
-    def __init__(self):
-        print("new user being created...")
+    def __init__(self, user_id, username):
+        self.id = user_id
+        self.username = username
+        self.followers = 0
 
 
-user_1 = User()
-
-
-# TODO Working with Attributes, Class Constructors and the _init_() Function
-user_1.id = "001"
-user_1.user_name = "Shaun"
-
-
-print(user_1.user_name)
-
-user_2 = User()
-user_2.id = "002"
-user_2.user_name = "Jack"
+user_1 = User("001","Shaun")
+user_2 = User("002","John")
+print(user_1.followers)
 
 
 # TODO Adding Methods to a Class
