@@ -10,8 +10,8 @@ still_has_questions = True
 # TODO Loop through ech of the questions in question_data
 for question in question_data:
     #for each question create a variable called question_text
-    question_text = question["text"]
-    question_answer = question["answer"]
+    question_text = question["question"]
+    question_answer = question["correct_answer"]
     # TODO Create a Question object from each entry in question_data
     new_question = Question(question_text,question_answer)
     # TODO Append each Question object to the question_bank

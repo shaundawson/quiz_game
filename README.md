@@ -1,5 +1,9 @@
-# quiz_game
-A simple true/false game. A question will be asked to the user. The user will select true or false then told whether the answer is correct and given a score.
+# Film Trivia Game
+ Test your knowledge of Hollywood with these true and false questions about the biggest stars and most famous movies.
+
+Open Trivia Database:
+https://opentdb.com/
+
 
 Play the game here: 
 https://replit.com/@ShaunDawson/day17-quizgame#main.py
