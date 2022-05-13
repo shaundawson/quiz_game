@@ -16,4 +16,13 @@ class QuizBrain:
         current_question = self.question_list[self.question_number]
         self.question_number += 1
         # Use the input() function to show the user the Question text and ask for the user's answer
-        input(f"{self.question_number}: {current_question.text} (True/False): ")
+        user_answer = input(f"{self.question_number}: {current_question.text} (True/False): ")
+        self.check_answer(user_answer, current_question.answer)
+
+    def check_answer(self, user_answer, correct_answer):
+        if user_answer.lower() == correct_answer.lower():
+            print("You got it right!")
+        else: 
+            print("You got it wrong.")
+        print(f"The correct answer was: {correct_answer}.")
+
